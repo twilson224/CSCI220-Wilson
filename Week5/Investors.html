@@ -4,6 +4,7 @@
         <title>
             Investors
         </title>
+        <!-- Adds CSS styling to the webpage -->
         <style>
             .topnav {background-color: rgb(5,57,107); overflow: hidden;}
             .topnav a {float: left; color: rgb(237,244,224); text-align: center; padding: 14px 16px; text-decoration: none; font-size: 17px;}
@@ -13,10 +14,17 @@
 
             h1 {color:rgb(237,244,224);
                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;}
+            
+            table {width: 50%; border-collapse: collapse;}
+
+            table, th, td {border: 2px solid black;}
+
+            th {background-color: rgb(5,57,107);}
 
         </style>
     </head>
     <body>
+        <!-- Adds a div to group the navigation bar -->
         <div class="topnav">
             <a href="Home.html">Experiment Details</a>
             <a href="Investors.html">Investors</a>
@@ -24,6 +32,7 @@
 
         <h1>Investors</h1>
 
+        <!-- Adds a table to display the investors -->
         <table>
             <tr>
                 <th>Company</th>
@@ -34,20 +43,20 @@
             <tr>
                 <td>RadTech, Inc</td>
                 <td>RadTech is an industry leader providing advanced technology for conducting scientific research.</td>
-                <td><img src="radtech-logo.png" alt="radtech-logo"></td>
-                <td>$50,000</td>
+                <td><img src="radtech-logo.png" alt="radtech-logo" style="width:200px;height:150px;"></td>
+                <td style="color: rgb(237,244,224);"><strong>$50,000</strong></td>
             </tr>
             <tr>
                 <td>Upstart Pharmaceuticals</td>
                 <td>Upstart research scientists are working to develop the next generation of safe, all-natural, and cost-effective supplements to help fight fatigue and provide mental focus for students and business professionals.</td>
-                <td><img src="upstart-logo.png" alt="upstart-logo"></td>
-                <td>$75,000</td>
+                <td><img src="upstart-logo.png" alt="upstart-logo" style="width:200px;height:150px;"></td>
+                <td style="color: rgb(237,244,224);"><strong>$75,000</strong></td>
             </tr>
             <tr>
                 <td>Polytechnic University</td>
                 <td>Polytechnic University is investing in research to benefit students by providing funding and internship opportunities for students in biology and chemistry.</td>
-                <td><img src="polytech-logo.png" alt="polytech-logo"></td>
-                <td>$25,000</td>
+                <td><img src="polytech-logo.png" alt="polytech-logo" style="width:200px;height:150px;"></td>
+                <td style="color: rgb(237,244,224);"><strong>$25,000</strong></td>
             </tr>
         </table>
     </body>
