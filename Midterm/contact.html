@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Silverstein - Contact
+        </title>
+
+        <!-- Adds the links for the fonts and to the CSS stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap|Open+Sans&family=Oswald:wght@500&display=swap">
+        <link rel="stylesheet" href="MenuStyle.css">
+        <link rel="stylesheet" href="MainStyle.css">
+
+        <!-- Adds the background image -->
+        <style>
+            body {background-image: url(SilversteinAlbum2.jpg);
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-size: 100% 100%;
+                  z-index: -1;}
+        </style>
+    </head>
+    <body>
+
+        <!-- Adds the divs to create the hamburger menu-->
+        <div class="menuWrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links the logo to the index -->
+        <a href="index.html"><img class="Logo" src="SilversteinLogo3.png"></a>
+
+        <h1>Join the mailing list</h1>
+
+        <!-- Adds a form for the mailing list-->
+        <form action="mailto:silverstein@example.com" method="post" enctype="text/plain">
+            Name:<br>
+            <input type="text" name="name"><br>
+            E-mail:<br>
+            <input type="text" name="mail"><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <h2>Check out the social media pages</h2>
+
+        <!-- Adds a table to make the icons horizontal and centered-->
+        <table class="Center">
+            <tr>
+                <th><a href=https://www.facebook.com/silversteinmusic><img class="Album" src="Facebook.png"></a></th>
+                <th><a href="https://www.instagram.com/silverstein/?hl=en"><img class="Album" src="Instagram.png"></a></th>
+                <th><a href="https://twitter.com/silverstein?ref_src=twsrc%5Egoogle%7Ctwcamp%5Eserp%7Ctwgr%5Eauthor"><img class="Album" src="Twitter.png"></a></th>
+            </tr>
+        </table>
+    </body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>
+            Silverstein
+        </title>
+
+        <!-- Adds the links for the fonts and to the CSS stylesheets -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap|Open+Sans&family=Oswald:wght@500&display=swap">
+        <link rel="stylesheet" href="MenuStyle.css">
+        <link rel="stylesheet" href="MainStyle.css">
+
+        <!-- Adds the background image -->
+        <style>
+            body {background-image: url(SilversteinFullBandLarge.jpg);
+                  background-repeat: no-repeat;
+                  background-attachment: fixed;
+                  background-size: 100% 100%;
+                  z-index: -1;}
+        </style>
+    </head>
+    <body>
+
+        <!-- Adds the divs to create the hamburger menu-->
+        <div class="menuWrap">
+            <input type="checkbox" class="toggler">
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="events.html">Events</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Links the logo to the index -->
+        <a href="index.html"><img class="Logo" src="SilversteinLogo3.png"></a>
+
+        <h1>Check out the latest video</h1>
+
+        <!-- Embeds a video to the latest music video by the band-->
+        <iframe class="Center" width="560" height="315" src="https://www.youtube.com/embed/QHUBirNTMCQ" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+        <h2>Want to hear more Silverstein?</h2>
+
+        <!-- Embeds a spotify playlist of popular songs by the band-->
+        <iframe class="Center" src="https://open.spotify.com/embed/playlist/37i9dQZF1DZ06evO14c9FK" width="300" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+
+        <!-- Adds a link to the bands merch store-->
+        <h2><a href="https://silversteinstore.com/">Click here to get the latest Silverstein merch!</a></h2>
+    </body>
+</html>
