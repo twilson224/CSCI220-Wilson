@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <title>
+        Employee Information
+    </title>
+    <!-- Adds jquery -->
+    <script src="jquery-3.6.0.slim.js"></script>
+    <!-- Adds style to the site -->
+    <style>
+        td {
+            border-bottom: 1px solid black;
+            padding: 50px;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            font-weight: bold;
+        }
+
+        table,
+        form {
+            margin-left: auto;
+            margin-right: auto;
+            color: #EEA47FFF;
+        }
+
+        body {
+            text-align: center;
+            background-color: #00539CFF;
+        }
+
+        h1 {
+            color: #EEA47FFF;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Enter employee information.</h1>
+    <!-- Adds a form to enter information -->
+    <form method="post" id="dataForm">
+        Name: <br>
+        <input type="text" name="name" id="name"><br>
+        Title: <br>
+        <input type="text" name="title" id="title"><br>
+        Hire Date: <br>
+        <input type="date" name="hireDate" id="hireDate"><br><br>
+        <input type="submit" name="submit" value="Submit"><br>
+    </form>
+    <!-- Adds a table for the data-->
+    <div>
+        <table>
+            <thead>
+                <tr>
+                    <td id="tableName">Name</td>
+                    <td id="tableTitle">Title</td>
+                    <td id="tableDate">Hire Date</td>
+                </tr>
+            </thead>
+            <tbody id="displayData"></tbody>
+        </table>
+    </div>
+
+    <script>
+        // Checks for empty feilds on the form
+        $('#dataForm').submit(function () {
+            if ($.trim($("#name").val()) === "" || $.trim($("#title").val()) === "" || $.trim($("#hireDate").val()) === "") {
+                alert('you did not fill out one of the fields');
+                return false;
+            }
+            // Takes the data from the form and puts it into a table 
+            else
+                event.preventDefault();
+            var $inputs = $('#dataForm :input');
+            var values = {};
+            $inputs.each(function () {
+                values[this.name] = $(this).val();
+            });
+            $('#displayData').append("<tr><td>" + values.name + "</td><td>" + values.title + "</td><td>" + values.hireDate);
+            // clears the fields in the form
+            $("input[type=text], textarea, date").val("");
+        });
+    </script>
+</body>
+
+</html>
