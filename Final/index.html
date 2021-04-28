@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Title of page-->
+        <title>The Store</title>
+        <!-- links the files needed for the page-->
+        <link rel="stylesheet" href="styles.css" />
+        <script src="items.js"></script>
+        <script src="store.js" async></script>
+    </head>
+    <body>
+
+        <!-- Navigation bar-->
+        <header class="mainHeader">
+            <nav class="mainNav nav">
+                <ul>
+                    <li><a href="index.html">HOME</a></li>
+                </ul>
+            </nav>
+            <h1 class="storeName storeNameLarge">The Store</h1>
+        </header>
+
+        <!-- Section for the store items-->
+        <section class="container contentSection">
+            <h2 class="sectionHeader">Music Equipment</h2>
+            <div class="shopItems">
+                <div class="shopItem">
+                    <span class="shopItemTitle">Item 1</span>
+                    <img class="shopItemImage" src="C:\Users\tyler\Desktop\USF\CSCI 220\CSCI220-Wilson\Final\Images\Item1.webp">
+                    <div class="shopItemDetails">
+                        <span class="shopItemPrice">$99.00</span>
+                        <button class="btn btnPrimary shopItemButton" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shopItem">
+                    <span class="shopItemTitle">Item 2</span>
+                    <img class="shopItemImage" src="C:\Users\tyler\Desktop\USF\CSCI 220\CSCI220-Wilson\Final\Images\Item2.webp">
+                    <div class="shopItemDetails">
+                        <span class="shopItemPrice">$1169.00</span>
+                        <button class="btn btnPrimary shopItemButton"type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shopItem">
+                    <span class="shopItemTitle">Item 3</span>
+                    <img class="shopItemImage" src="C:\Users\tyler\Desktop\USF\CSCI 220\CSCI220-Wilson\Final\Images\Item3.webp">
+                    <div class="shopItemDetails">
+                        <span class="shopItemPrice">$99.00</span>
+                        <button class="btn btnPrimary shopItemButton" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+                <div class="shopItem">
+                    <span class="shopItemTitle">Item 4</span>
+                    <img class="shopItemImage" src="C:\Users\tyler\Desktop\USF\CSCI 220\CSCI220-Wilson\Final\Images\Item4.webp">
+                    <div class="shopItemDetails">
+                        <span class="shopItemPrice">$399.99</span>
+                        <button class="btn btnPrimary shopItemButton" type="button">ADD TO CART</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Section for the cart-->
+        <section class="container contentSection">
+            <h2 class="sectionHeader">CART</h2>
+            <div class="cartRow">
+                <span class="cartItem cartHeader cartColumn">ITEM</span>
+                <span class="cartPrice cartHeader cartColumn">PRICE</span>
+                <span class="cartQuantity cartHeader cartColumn">QUANTITY</span>
+            </div>
+            <div class="cartItems">
+            </div>
+            <div class="cartTotal">
+                <strong class="cartTotalTitle">Total</strong>
+                <span class="cartTotalPrice">$0</span>
+            </div>
+            <button class="btn btnPrimary btnPurchase" type="button">PURCHASE</button>
+        </section>
+        
+    </body>
+</html>

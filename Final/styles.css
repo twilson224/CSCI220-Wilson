@@ -1,0 +1,240 @@
+/* Imports fonts to the page */
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,700');
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100&display=swap');
+
+@font-face {
+    font-family: "Booter - Zero Zero";
+    src: url("Fonts/Booter - Zero Zero.woff") format("woff"),
+         url("Fonts/Booter - Zero Zero.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body {
+    margin: 0;
+    padding: 0;
+    min-height: 100%;
+}
+
+.nav ul {
+    margin: 0;
+}
+
+.nav li {
+    display: inline;
+}
+
+.nav a {
+    display: inline-block;
+    padding: .5em;
+    color: white;
+    text-decoration: none;
+}
+
+.mainNav {
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: lighter;
+    border-bottom: 1px solid rgba(255, 255, 255, .3)
+}
+
+.mainNav li {
+    padding: 0 5%;
+}
+
+.nav a:hover {
+    background-color: rgba(255, 255, 255, .3)
+}
+
+.mainHeader {
+    background-color: rgba(0, 0, 0, .6);
+    background-blend-mode: multiply;
+    background-size: cover;
+    padding-bottom: 30px;
+}
+
+.storeName {
+    text-align: center;
+    margin: 0;
+    font-size: 4em;
+    font-family: "Booter - Zero Zero";
+    font-weight: normal;
+    color: white;
+}
+
+.storeNameLarge {
+    font-size: 8em;
+}
+
+.contentSection {
+    margin: 1em;
+}
+
+.container {
+    max-width: 900px;
+    margin: 0 auto;
+    padding: 0 1.5em;
+}
+.sectionHeader {
+    font-family: "Antonio";
+    font-weight: normal;
+    color: #333;
+    text-align: center;
+    font-size: 2.5em;
+}
+
+.btn {
+    text-align: center;
+    vertical-align: middle;
+    padding: .67em .67em;
+    cursor: pointer;
+}
+
+.btnPrimary {
+    color: white;
+    background-color: #56CCF2;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btnPrimary:hover {
+    background-color: #2D9CDB;
+}
+
+.shopItem {
+    margin: 30px;
+}
+
+.shopItemTitle {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.shopItemImage {
+    height: 250px;
+}
+
+.shopItemDetails {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+}
+
+.shopItemPrice {
+    flex-grow: 1;
+    color: #333;
+}
+
+.shopItems {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.cartHeader {
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #333;
+}
+
+.cartColumn {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cartRow {
+    display: flex;
+}
+
+.cartItem {
+    width: 45%;
+}
+
+.cartPrice {
+    width: 20%;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.cartQuantity {
+    width: 35%;
+}
+
+.cartItemTitle {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.cartItemImage {
+    width: 75px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.btnDanger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btnDanger:hover {
+    background-color: #CC4C4C;
+}
+
+.carQuantityInput {
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cartRow:last-child {
+    border-bottom: 1px solid black;
+}
+
+.cartRow:last-child .cartColumn {
+    border: none;
+}
+
+.cartTotal {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cartTotalTitle {
+    font-weight: bold;
+    font-size: 1.5em;
+    color: black;
+    margin-right: 20px;
+}
+
+.cartTotalPrice {
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btnPurchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.75em;
+}
